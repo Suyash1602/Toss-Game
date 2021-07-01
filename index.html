@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toss Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Toss Game</h1>
+        <div class="dice">
+            <p>Player 1</p>
+            <img src="img/Dice1.png" id="player1" alt="">
+        </div>
+        <div class="dice">
+            <p>Player 2</p>
+            <img src="img/Dice6.png" id="player2" alt="">
+        </div>
+        <div>
+            <button type="submit" onclick="playGame()">Shuffle</button>
+            <button onClick="window.location.reload();">Reset</button>
+        </div>
+    </div>
+    <div class="rules">
+        <h3>Rules</h3>
+        <p>After the shuffle the player who gets the maximum number wins the game.</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
